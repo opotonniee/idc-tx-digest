@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IdCloud Transaction Data Digest</title>
+  <link rel="stylesheet" href="tx-digest.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="../lib/lib-tx-digest.js"></script>
+</head>
+<body>
+
+  <div id="wrapper">
+    <h1>IdCloud Transaction Data Digest</h1>
+    <p>Enter the JSON transaction data:</p>
+    <textarea rows="10" cols="50"></textarea><br/>
+    <label><input id="legacy" type="checkbox" checked/> Accept legacy format</label>
+    <p>Examples:
+      <select id="examples"></select>
+      <button id="testAll">Test All</button>
+    </p>
+    <div>
+      <button id="doDigest">Digest</button>
+    </div>
+    <div id="out"></div>
+    <div id="push"></div>
+  </div>
+  <div id="footer">
+    This application is provided for development and testing, without any guarantee
+  </div>
+
+  <script src="tx-digest.js"></script>
+</body>
+</html>
