@@ -24,6 +24,6 @@ To allow processing of both the legacy and the new JSON format a second attribut
 txDigest.digest(`{
   "amount" : "123",
   "beneficiary" : "John Smith"
-]`, true)
+}`, true)
 ```
 
