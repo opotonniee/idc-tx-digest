@@ -26,14 +26,4 @@ txDigest.digest(`{
   "beneficiary" : "John Smith"
 ]`, true)
 ```
---
---
-fdlkgjdfghdf
-ghdf
-ghdf
-ghdf
-gh
-fgdfgdf
-dfg
-dfgd
-fg
+
