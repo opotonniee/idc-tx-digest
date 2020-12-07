@@ -27,3 +27,4 @@ txDigest.digest(`{
 }`, true)
 ```
 
+You can [test it here](https://opotonniee.github.io/idc-tx-digest/test/)
