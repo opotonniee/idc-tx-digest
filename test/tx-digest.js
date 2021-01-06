@@ -46,12 +46,12 @@ let examples = {
   `, "SyntaxError"],
   "invalid: empty name": [`
   {
-    "" : "123",
+    "" : "123"
   }
   `, "SyntaxError"],
   "invalid: empty value": [`
   {
-    "amount" : "",
+    "amount" : ""
   }
   `, "SyntaxError"],
   "invalid: empty array": [`
