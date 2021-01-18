@@ -27,17 +27,17 @@ async function doDigest() {
 }
 
 let examples = {
-  "legacy format": [`
-  {
-    "amount" : "123",
-    "beneficiary" : "John Smith"
-  }
-  `, "51E365925D1571641FD35B4502D4603A326B8EA6CB7DF02FAE38B3ACFDA2E3AA"],
   "new format": [`
   [
     { "amount" : "123" },
     { "beneficiary" : "John Smith" }
   ]
+  `, "51E365925D1571641FD35B4502D4603A326B8EA6CB7DF02FAE38B3ACFDA2E3AA"],
+  "legacy format": [`
+  {
+    "amount" : "123",
+    "beneficiary" : "John Smith"
+  }
   `, "51E365925D1571641FD35B4502D4603A326B8EA6CB7DF02FAE38B3ACFDA2E3AA"],
   "invalid: undefined": [`
   `, "SyntaxError"],
