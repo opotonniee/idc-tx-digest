@@ -48,12 +48,12 @@ let examples = {
   {
     "" : "123"
   }
-  `, "SyntaxError"],
+  `, "(SyntaxError|Invalid )"],
   "invalid: empty value": [`
   {
     "amount" : ""
   }
-  `, "SyntaxError"],
+  `, "(SyntaxError|Invalid )"],
   "invalid: empty array": [`
   []
   `, "Empty"],
@@ -62,7 +62,7 @@ let examples = {
   `, "Invalid"],
   "invalid: empty object": [`
   {}
-  `, "Empty"],
+  `, "(Empty|Invalid )"],
   "invalid: neither object nor array": [`
     "amount"
   `, "Invalid"],
@@ -174,7 +174,7 @@ function testAll() {
       .catch((err) => {
         if (!name.startsWith("invalid")) {
           isErr(name, "UNEXPECTED ERROR (" + err + ")");
-        } else if (err.toString().indexOf(value[1]) < 0){
+        } else if (!err.toString().match(value[1])){
           isErr(name, "UNEXPECTED ERROR STATUS (" + err + ")");
         } else {
           isOk();
